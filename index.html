@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/icofont/icofont.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Task-list</title>
+</head>
+
+<body>
+
+    <div class="section mt-5">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-8">
+                    <div class="card" id="main">
+                        <div class="card-body">
+                            <form id="task-form">
+                                <div class="form-group">
+                                    <label for="task">ایجاد تسک</label>
+                                    <input class="form-control" type="text" name="task" id="task" placeholder="تسک را وارد کنید ...">
+                                </div>
+                                <button type="submit" class="btn btn-primary">اضافه کردن</button>
+                            </form>
+
+                            <hr>
+
+                            <h5>تسک ها</h5>
+                            <div class="form-group">
+                                <label for="filter">فیلتر تسک</label>
+                                <input class="form-control" type="email" name="filter" id="filter" placeholder="تسک ...">
+                            </div>
+
+                            <div>
+                                <ul class="list-group pr-0">
+                                    <!-- <li class="list-group-item d-flex align-items-center">
+                                        تسک 1
+                                        <i class="fas fa-times text-danger mr-auto delete-item"></i>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <button type="submit" class="clear-tasks btn btn-dark mt-3">پاک کردن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
